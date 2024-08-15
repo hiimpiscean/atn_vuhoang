@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Detail</title>
+</head>
+<style>
+    label{
+        color: deeppink;
+    }
+</style>
+
+<body>
+    <section class="section about-section gray-bg" id="about">
+        <div class="container">
+            <div class="row align-items-center flex-row-reverse">
+                <div class="col-lg-6">
+                    <div class="about-text go-to">
+                        <h3 class="dark-color" style="text-align:center; margin-top: 10px ;">About Product</h3>
+                        <div class="row about-list">
+                            <div class="col-md-6">
+                                <div class="media">
+                                    <label>Name:</label>
+                                    <p>{{doll.name}}</p>
+                                </div>
+                                <div class="media">
+                                    <label>Price:</label>
+                                    <p>${{doll.price}}</p>
+                                </div>
+                                <div class="media">
+                                    <label>Date of Manufacture</label>
+                                    <p>{{dateFormat doll.dob "DD/MM/YYYY"}}</p>
+                                </div>
+                                <div class="media">
+                                    <label>Category:</label>
+                                    <p>{{doll.category}}</p>
+                                </div>
+                                <div class="media">
+                                    <label>Supplier:</label>
+                                    <p>{{doll.supplier}}</p>
+                                </div>
+                                <div class="media">
+                                    <label>Available:</label>
+                                    <p>{{doll.available}}</p>
+                                </div>
+                                <div class="media">
+                                    <label> Description:</label>
+
+                                </div>
+                            </div>
+                            <p>{{doll.description}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-avatar">
+                        <img src="{{doll.image}}" title="" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="counter">
+                <div class="row">
+                    <div class="col-6 col-lg-3">
+                        <div class="count-data text-center">
+                            <h6 class="count h2" data-to="500" data-speed="500">5.000.000</h6>
+                            <p class="m-0px font-w-600">View Clients</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="count-data text-center">
+                            <h6 class="count h2" data-to="150" data-speed="150">150</h6>
+                            <p class="m-0px font-w-600">Cart Client</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="count-data text-center">
+                            <h6 class="count h2" data-to="850" data-speed="850">850</h6>
+                            <p class="m-0px font-w-600">Photo Capture</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="count-data text-center">
+                            <h6 class="count h2" data-to="190" data-speed="190">190</h6>
+                            <p class="m-0px font-w-600">Client Call</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
